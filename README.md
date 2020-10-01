@@ -3,7 +3,7 @@ Conversion program for ORM data to visualize in the nucleome browser
 
 ## Program for orm file formating
 
-This program takes two ORM files as input (gtf file containing the fibers and bed file containing the replication segments) and output a BED file and its compressed version and index for visualization with the nucleome browser (https://vis.nucleome.org and github.com/nucleome)
+This program takes two ORM files as input (gtf file containing the fibers and bed file containing the replication segments) and output a BED file and its compressed version and index for visualization with the nucleome browser (https://vis.nucleome.org and https://github.com/nucleome)
 
 ## Usage
 
