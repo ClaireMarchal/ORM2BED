@@ -22,10 +22,15 @@ A tab delimited file similar to the gtf format containing one fiber or one signa
 ### Replication segment: bed file
 
 A tab delimited file containing:
+
   1st column: chromosome
+
   2nd column: start
+
   3rd column: stop
+
   4th column: fiber ID
+
   Other columns: not used
 
 ## Output file format
