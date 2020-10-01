@@ -15,11 +15,11 @@ for example:
 
 ## Input file format
 
-# Fibers and signal: gtf file
+### Fibers and signal: gtf file
 
 A tab delimited file similar to the gtf format containing one fiber or one signal per line
 
-# Replication segment: bed file
+### Replication segment: bed file
 
 A tab delimited file containing:
   1st column: chromosome
