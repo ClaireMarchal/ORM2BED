@@ -39,8 +39,8 @@ echo -e "This script is converting a gtf (fibers + nucleotides) and bed (segment
 echo -e "Segments or nucleotides not overlapping with any fiber will be printed in a [base name]\".error\" file."
 
 
-cat $gtf | awk '/transcript\t/{print $1,$4,$5,$10,"fiber","NA"} !/transcript\t/{if($6!="."){print $1,($4+$5)/2,($4+$5)/2,$12,"nucleotide",$6}}' OFS='\t' | sed 's/[";TRP]//g' > tmp_${out}.bed
-cat $bed | awk '//{print $1,$2,$3,$4,"segment","NA"}' OFS='\t' >> tmp_${out}.bed
+cat $gtf | awk '/transcript\t/{print $1,$4,$5,$10,"fiber","NA"} !/transcript\t/{if($6!="."){print $1,($4+$5)/2,($4+$5)/2,$12,"nucleotide",$6}}' OFS='\t' | sed 's/chr23/chrX/g' | sed 's/\"TRP//g' | sed 's/[";]//g'  > tmp_${out}.bed
+cat $bed | awk '//{print $1,$2,$3,$4,"segment","NA"}' OFS='\t' | sed 's/chr23/chrX/g' >> tmp_${out}.bed
 
 sort -k4,4 -k5,5 -k1,1 -k2,2n -k3,3n tmp_${out}.bed > tmp_${out}_srt.bed
 
