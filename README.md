@@ -35,4 +35,4 @@ A tab delimited file containing:
 
 ## Output file format
 
-See https://github.com/nimezhu/ORM/tree/master/browser
+See https://github.com/ClaireMarchal/ORM/tree/master/browser
